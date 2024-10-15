@@ -21,9 +21,158 @@
     <!-- CDN TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body class="flex flex-col min-h-screen">
+    <header class="flex justify-between py-4 px-5 border-b shadow items-center">
+      <div class="flex items-center">
+        <i class="fa-solid fa-code mr-2 text-3xl"></i>
+        <span class="text-2xl">Guillemot Clément</span>
+      </div>
+      <ul class="flex gap-x-3">
+        <li><a href="#about_me" class="hover:underline">About me</a></li>
+        <li><a href="#skill" class="hover:underline">Skills</a></li>
+        <li><a href="#experience" class="hover:underline">Experiences</a></li>
+        <li><a href="#education" class="hover:underline">Education</a></li>
+        <li><a href="#project" class="hover:underline">Projects</a></li>
+        <li><a href="#contact" class="hover:underline">Contact me</a></li>
+      </ul>
+    </header>
+
+    <div class="flex-auto bg-slate-50 flex flex-col">
+      <main class="container mx-auto bg-white border flex-grow my-5 rounded-md flex flex-col gap-y-20">
+        <section id="hero" class="mt-10 flex justify-center items-center">
+          <div class="">
+            <img src="assets/img/pro.JPG" alt="profil picture" class="h-40 rounded-full">
+            <h1>Guillemot Clément</h1>
+          </div>
+          <div class="w-72">
+            <h2>FullStack developper</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae molestias, illum modi quo excepturi dicta doloribus? Temporibus qui error, praesentium sint nobis, commodi, repudiandae omnis vero suscipit quos aspernatur. Mollitia!</p>
+            <a href="#contact" class="bg-blue-500 text-white py-2 px-3 rounded-md shadow-lg hover:bg-blue-600">Contact Me</a>
+          </div>
+        </section>
+
+        <section id="about_me" class="h-96">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit veniam eaque odit voluptate id blanditiis ex facere laboriosam vitae. Veniam vitae modi aliquam, reprehenderit dolor corporis voluptate saepe sapiente!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit veniam eaque odit voluptate id blanditiis ex facere laboriosam vitae. Veniam vitae modi aliquam, reprehenderit dolor corporis voluptate saepe sapiente!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit veniam eaque odit voluptate id blanditiis ex facere laboriosam vitae. Veniam vitae modi aliquam, reprehenderit dolor corporis voluptate saepe sapiente!</p>
+        </section>
+
+        <section id="skill" class="h-96">
+          <h2>Skills</h2>
+          <div class="border">
+            <h3>Front-End</h3>
+            <ul>
+              <li>
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h3>Back-End</h3>
+            <ul>
+              <li>
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-node"></i>
+                <span>Node JS</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-symfony"></i>
+                <span>Symfony</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="">
+            <h3>Other</h3>
+            <ul>
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-figma"></i>
+                <span>Figma</span>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          
+        </section>
+
+        <section id="experience" class="flex flex-col gap-y-10">
+          <h2 class="font-bold text-2xl">Experience</h2>
+          <div class="">
+            <div class="flex items-center">
+              <img src="https://media.licdn.com/dms/image/v2/D4E0BAQHOH1a1LePAfQ/company-logo_200_200/company-logo_200_200/0/1681200790079/evode_logo?e=1736985600&v=beta&t=Bj2fjpkSWg187YY3jXGYJK8kcg0TRv3wXDXl1ndMshA" alt="" class="h-10 mr-2">
+              <h3 class="font-bold">Evode</h3>
+            </div>
+              <p>2024 - now</p>
+              <p>Alternance</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, nesciunt vitae ullam debitis unde alias ex tempore nostrum voluptas blanditiis, nam sunt, optio quasi officia laudantium maxime repellat. Nisi, voluptate.</p>            
+          </div>
+
+          <div class="">
+            <div class="flex items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Logo_of_the_French_Army_%28Armee_de_Terre%29.svg" alt="" class="h-10 mr-2">
+              <h3 class="font-bold">Ministère des armées</h3>
+            </div>
+            <div class="">
+              <p>2016 - 2024</p>
+              <p>Technicien Avionique</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, nesciunt vitae ullam debitis unde alias ex tempore nostrum voluptas blanditiis, nam sunt, optio quasi officia laudantium maxime repellat. Nisi, voluptate.</p>
+            </div>        
+          </div>
+        </section>
+
+        <section id="education" class="h-96">
+          <h2 class="font-bold text-2xl">Education</h2>
+          <ul class="flex flex-col">
+            <li class="flex flex-col">
+              <p>2024 - 2026</p>
+              <p>Alternance Concepteur Développeur d'Application</p>
+              <div class="flex items-center">
+                <img src="https://oclock.io/wp-content/uploads/2023/11/logo-noir-blanc-rouge-768x768_centre-rond720px.png" alt="" class="h-10 mr-2">
+                <span>O'clock</span>
+              </div>
+            </li>
+            <li>
+              <span>2024</span>
+              <span>Titre Professionnel Développeur Web et Web Modile</span>
+              <span>Centre Militaire de Formation Professionnelle - Fontenay-le-Comte</span>
+            </li>
+          </ul>
+        </section>
+
+        <section id="project" class="h-96">
+          <h2>Projects</h2>
+        </section>
+
+        <section id="contact" class="h-96">
+          <h2>Contact</h2>
+        </section>
+
+      </main>
+    </div>
+    
+    <footer class="flex justify-between py-4 px-5 border-t">
+      <p>Copyright &copy; <span class="italic font-light">Guillemot Clément</span></p>
+      <ul class="flex gap-x-3">
+        <li><a href="https://github.com/GuillemotClement" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/cl%C3%A9ment-guillemot/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+    </footer>
   </body>
 </html>
